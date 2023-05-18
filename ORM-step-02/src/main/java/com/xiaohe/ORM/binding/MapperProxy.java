@@ -7,19 +7,27 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 /**
- * @author : 小何
- * @Description :
- * @date : 2023-05-18 20:59
+ * @ClassName MapperProxy
+ * @Description MapperProxy实现了invoke方法，供MapperProxyFactory调用
+ * @Author 何
+ * @Date 2023-05-18 23:30
+ * @Version 1.0
  */
 public class MapperProxy<T> implements InvocationHandler, Serializable {
     private final Class<T> mapperInterface;
     private SqlSession sqlSession;
 
+
+    /**
+     * @return
+     * @description
+     * @param    mapperInterface
+     * @param    sqlSession
+     */
     public MapperProxy(Class<T> mapperInterface, SqlSession sqlSession) {
         this.mapperInterface = mapperInterface;
         this.sqlSession = sqlSession;
     }
-
 
 
     @Override
