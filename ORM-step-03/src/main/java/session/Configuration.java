@@ -28,6 +28,14 @@ public class Configuration {
     public <T> T getMapper(Class<T> type, SqlSession sqlSession) {
         return mapperRegistry.getMapper(type, sqlSession);
     }
-
+    public <T> boolean hasMapper(Class<T> type) {
+        return mapperRegistry.hasMapper(type);
+    }
+    public void addMappedStatement(MappedStatement mappedStatement) {
+        mappedStatements.put(mappedStatement.getId(), mappedStatement);
+    }
+    public MappedStatement getMappedStatement(String id) {
+        return mappedStatements.get(id);
+    }
 
 }
