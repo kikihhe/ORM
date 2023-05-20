@@ -1,6 +1,6 @@
-package mapping;
+package com.xiaohe.ORM.mapping;
 
-import session.Configuration;
+import com.xiaohe.ORM.session.Configuration;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package mapping;
+package com.xiaohe.ORM.mapping;
 
 /**
  * @ClassName SqlCommandType

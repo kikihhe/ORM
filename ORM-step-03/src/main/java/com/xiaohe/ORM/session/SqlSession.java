@@ -1,4 +1,4 @@
-package session;
+package com.xiaohe.ORM.session;
 
 /**
  * @ClassName SqlSession
@@ -8,6 +8,7 @@ package session;
  * @Version 1.0
  */
 public interface SqlSession {
+    Configuration getConfiguration();
 
     /**
      * 通过 执行对应的方法获取domain类

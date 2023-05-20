@@ -1,8 +1,8 @@
-package binding;
+package com.xiaohe.ORM.binding;
 
 import cn.hutool.core.lang.ClassScanner;
-import session.Configuration;
-import session.SqlSession;
+import com.xiaohe.ORM.session.Configuration;
+import com.xiaohe.ORM.session.SqlSession;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,8 +1,7 @@
-package session;
+package com.xiaohe.ORM.session;
 
-import binding.MapperRegistry;
-import cn.hutool.core.lang.hash.Hash;
-import mapping.MappedStatement;
+import com.xiaohe.ORM.binding.MapperRegistry;
+import com.xiaohe.ORM.mapping.MappedStatement;
 
 import java.util.HashMap;
 import java.util.Map;
