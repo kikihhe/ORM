@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * @ClassName Configuration
- * @Description TODO
+ * @Description 存储整个mybatis-config.xml的配置信息，如数据源、mappers、别名
  * @Author 何
  * @Date 2023-05-19 23:52
  * @Version 1.0

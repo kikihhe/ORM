@@ -6,16 +6,18 @@ import java.util.Map;
 
 /**
  * @ClassName MappedStatement
- * @Description TODO
+ * @Description 存储每一条SQL的信息
  * @Author 何
  * @Date 2023-05-19 23:54
  * @Version 1.0
  */
 public class MappedStatement {
-    private Configuration configuration;
-
     /**
-     * 本条sql的id
+     * 本条MappedStatement对应的配置，例如数据源、别名...
+     */
+    private Configuration configuration;
+    /**
+     * 本条sql的id，namespace+id
      */
     private String id;
 
